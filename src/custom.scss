@@ -1,9 +1,10 @@
+@import './variables.scss';
 
 $theme-colors: (
-    "primary": #cadbff,
-    "secondary": #5573e2,
-    "neutral": #0f0f10,
-    "info": #1babe0
+    "primary": $primary,
+    "secondary": $secondary,
+    "neutral": $neutral,
+    "info": $info
   );
 
 @import "../node_modules/bootstrap/scss/bootstrap";

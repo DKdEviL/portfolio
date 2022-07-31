@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.vr {
+    width: 2px;
+}
+.nav-link.social {
+    color: $white;
+}
+.link-social {
+    &:hover{
+        cursor: pointer;
+        color: $secondary;
+        transform: translateY(-2px);
+    }
+}
