@@ -13,3 +13,12 @@
         transform: translateY(-2px);
     }
 }
+.social_container {
+    width: 100%;
+}
+@media (min-width: $breakpoint-sm) {
+    .social_container {
+        width: 64px;
+        left: 20px;
+    }
+}

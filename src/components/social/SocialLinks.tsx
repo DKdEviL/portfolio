@@ -12,10 +12,9 @@ import {
 const SocialLinks = () => {
   return (
     <div
-      className="vstack gap-3 justify-content-end position-fixed bottom-0"
-      style={{ width: "64px", left: "20px" }}
+      className="vstack gap-3 justify-content-end position-fixed bottom-0 social_container"
     >
-      <ul className="nav flex-column text-bg-primary justify-content-center">
+      <ul className="nav flex-sm-column text-bg-primary justify-content-center">
         <li className="nav-item">
           <a className="nav-link social" href={SOCIAL_LINKS.GIT}>
             <FontAwesomeIcon
@@ -55,7 +54,7 @@ const SocialLinks = () => {
       </ul>
 
       <div
-        className="d-flex justify-content-center text-bg-primary"
+        className="d-flex justify-content-center text-bg-primary d-sm-flex d-none"
         style={{ height: "200px" }}
       >
         <div className="vr"></div>
