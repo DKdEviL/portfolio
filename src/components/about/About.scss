@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.list-group-item {
+    position: relative;
+    padding-left: 20px;
+    background: transparent;
+    color: $info;
+    &::before {
+        content: "✔";
+        color: $secondary;
+        font-size: 12px;
+        left: 0px;
+        position: absolute;
+    }
+}
