@@ -1,4 +1,5 @@
 import React from "react";
+import { ListGroup } from "react-bootstrap";
 import aboutMeImage from '../../boy_mobile.svg';
 import { PrimarySkills, SecondarySkills } from "../../data/skills";
 import './About.scss';
@@ -22,20 +23,20 @@ const AboutMe = () => {
           Here are a few technologies I’ve been working with recently:
         </p>
         <div className="d-flex w-100">
-          <ul className="list-group list-group-flush w-50">
+          <ListGroup variant="flush">
             {PrimarySkills.map((skill) => (
-              <li key={skill} className="list-group-item">
+              <ListGroup.Item key={skill} className="list-group-item">
                 {skill}
-              </li>
+              </ListGroup.Item>
             ))}
-          </ul>
-          <ul className="list-group list-group-flush w-50">
+          </ListGroup>
+          <ListGroup variant="flush">
             {SecondarySkills.map((skill) => (
-              <li key={skill} className="list-group-item">
+              <ListGroup.Item key={skill} className="list-group-item">
                 {skill}
-              </li>
+              </ListGroup.Item>
             ))}
-          </ul>
+          </ListGroup>
         </div>
       </div>
       <div>
