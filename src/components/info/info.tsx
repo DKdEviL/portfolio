@@ -21,7 +21,7 @@ const Info = () => {
               ?.website
           }
           target="_"
-          className="btn btn-primary stretched-link"
+          className="btn btn-primary"
         >
           {
             empHistory.find((employer) => employer.current_employer === true)
