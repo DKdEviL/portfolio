@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import AboutMe from './components/about/About';
+import Contact from './components/contact/Contact';
 import WorkExperience from './components/experience/WorkExperience';
 import Info from './components/info/info';
 import NavBar from './components/navbar/Navbar';
@@ -26,6 +27,9 @@ function App() {
         </div>
         <div id="experience">
           <WorkExperience />
+        </div>
+        <div id="contactMe">
+          <Contact />
         </div>
       </section>
     </div>
