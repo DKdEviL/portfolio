@@ -6,8 +6,7 @@ const Info = () => {
 
   return (
     <div className="container">
-      <p className="lead">Hi, I am</p>
-      <h1 className="display-3">Deepak</h1>
+      <h1 className="display-3 name focusName">Deepak</h1>
       <h1 className="display-5">
         - <u>Frontend Developer</u>
       </h1>

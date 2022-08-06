@@ -1,12 +1,14 @@
 import React from "react";
 import logo from '../../logo.svg';
+import './Navbar.scss'
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-sm sticky-top navbar-dark bg-dark p-3">
+    <nav className="navbar navbar-expand-sm sticky-top p-3">
       <div className="container-fluid justify-content-sm-between">
-      <a className="navbar-brand" href="#">
-            <img src={logo} alt="logo" width={75} height={75} />
+      <a className="navbar-brand logo-popup" href="#">
+            {/* <img src={logo} alt="logo" width={75} height={75} /> */}
+            D
           </a>
         <button
           className="navbar-toggler"

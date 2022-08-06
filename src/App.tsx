@@ -19,20 +19,20 @@ function App() {
 
       <SocialLinks />
       </aside>
-      <section>
-        <div>
+      <section className='main_container'>
+        <div className='neo_container'>
         <Info />
         </div>
-        <div id='aboutMe'>
+        <div id='aboutMe' className='neo_container'>
           <AboutMe />
         </div>
-        <div id="experience">
+        <div className='neo_container' id="experience">
           <WorkExperience />
         </div>
-        <div id="myProjects">
+        <div className='neo_container' id="myProjects">
           <Projects />
         </div>
-        <div id="contactMe">
+        <div className='neo_container' id="contactMe">
           <Contact />
         </div>
       </section>
