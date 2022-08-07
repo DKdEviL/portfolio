@@ -4,12 +4,22 @@
     position: relative;
     padding-left: 20px;
     background: transparent;
-    color: $info;
+    &.skill {
+        color: $primary;
+        font-weight: bold;
+        border: none;
+    }
     &::before {
         content: "✔";
-        color: $secondary;
+        color: $text-color-bold;
         font-size: 12px;
         left: 0px;
         position: absolute;
     }
+}
+.container.about {
+    color: $text-color-bold;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }

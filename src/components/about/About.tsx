@@ -6,8 +6,8 @@ import './About.scss';
 
 const AboutMe = () => {
   return (
-    <div className="container d-flex flex-column flex-sm-row">
-      <div className="my-5">
+    <div className="container about d-flex flex-column flex-sm-row">
+      <div className="my-5 text_container">
         <p className="fs-4">
           Hello! My name is Deepak and I enjoy developing things that live on
           the internet. My interest in web development started back in 2018 when
@@ -16,23 +16,19 @@ const AboutMe = () => {
           community taught me a lot about HTML, CSS, JavaScript & ReactJs!
         </p>
         <p className="fs-4">
-          My main focus these days is developing accessible, reusable components
-          and delivering the WOW! user experience for a variety of clients.
-        </p>
-        <p className="fs-4">
           Here are a few technologies I’ve been working with recently:
         </p>
         <div className="d-flex w-100">
-          <ListGroup variant="flush">
+          <ListGroup variant="flush" className="w-50">
             {PrimarySkills.map((skill) => (
-              <ListGroup.Item key={skill} className="list-group-item">
+              <ListGroup.Item key={skill} className="list-group-item skill">
                 {skill}
               </ListGroup.Item>
             ))}
           </ListGroup>
           <ListGroup variant="flush">
             {SecondarySkills.map((skill) => (
-              <ListGroup.Item key={skill} className="list-group-item">
+              <ListGroup.Item key={skill} className="list-group-item skill">
                 {skill}
               </ListGroup.Item>
             ))}
