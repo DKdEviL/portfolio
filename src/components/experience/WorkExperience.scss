@@ -1,0 +1,85 @@
+@import '../../variables';
+
+.experience_summary {
+    color: $text-color-bold;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.offer .contact_btn.btn-secondary {
+    background: #f2f2f3;
+    color: $text-color-bold;
+    font-weight: bold;
+    aspect-ratio: 1;
+    height: 50px;
+    width: 150px;
+    position: relative;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+    transition: all 250ms;
+    overflow: hidden;
+    margin-bottom: 0.4em;
+    box-shadow:  10px 10px 20px #a4a4a4,
+             -10px -10px 20px #ffffff;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 15px;
+        background-color: $primary;
+        z-index: -1;
+        -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+        transition: all 250ms
+       }
+    
+       &:hover {
+        color: $white
+       }
+
+       &:hover::before {
+        width: 100%;
+       }
+
+}
+
+
+.nav-pills {
+    .company_tab.nav-link {
+        background-color: transparent;
+        color: $primary;
+        font-size: 1.5rem;
+        border-bottom: 1px solid gray;
+        position: relative;
+
+        &:hover {
+            text-shadow: 0 0 18px rgba(0, 0, 0, .35);
+            transform: translate(1px, 1px);
+        }
+
+        &.active {
+            color: $text-color-bold;
+            background-color: transparent;
+        }
+
+        &.active::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 10%;
+            bottom: 38%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: currentColor;
+            pointer-events: none;
+        }
+    }
+}
