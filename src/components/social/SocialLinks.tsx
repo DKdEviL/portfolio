@@ -55,7 +55,7 @@ const SocialLinks = () => {
 
       <div
         className="d-flex justify-content-center d-sm-flex d-none"
-        style={{ height: "200px" }}
+        style={{ height: "100px" }}
       >
         <div className="vr"></div>
       </div>

@@ -1,32 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { empHistory } from "../../data/employment";
 import "./info.scss";
 
 const Info = () => {
-
   return (
     <div className="container">
-      <h1 className="display-3 name focusName">Deepak</h1>
-      <h1 className="display-5">
+      <h1 className="name focusName">Deepak</h1>
+      <h1 className="display-5 my-3 title">
         - <u>Frontend Developer</u>
       </h1>
-      <p className="fs-4">
-        I’m a software developer specializing in developing websites with
-        exceptional digital experiences. Currently, I’m focused on building
-        accessible, human-centered products at{" "}
-        <a
-          href={
-            empHistory.find((employer) => employer.current_employer === true)
-              ?.website
-          }
-          target="_"
-          className="btn btn-primary"
-        >
-          {
-            empHistory.find((employer) => employer.current_employer === true)
-              ?.employer_name
-          }
-        </a>
+      <p className="fs-4 info my-5">
+        I'm a <strong>developer</strong> in <strong>Haryana, India</strong>. I like working on the{" "}
+        <strong>front-end</strong> of the web. Currently, I’m focused on
+        building accessible, human-centered products.
       </p>
     </div>
   );

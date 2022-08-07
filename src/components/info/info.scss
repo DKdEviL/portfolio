@@ -2,12 +2,24 @@
 @import '../../animations.scss';
 
 .name {
-    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: clamp(3.5rem, 7.4666vw + 1.5rem, 7rem) !important;
 }
+.name, .title {
+    font-family: "Mouse Memoirs", sans-serif;
+    letter-spacing: 5px;
+}
+
 .container {
     padding: 20px !important;
 }
+
 .focusName {
-	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.info {
+    color: $text-color-bold;
+    font-weight: 500;
+    line-height: 1.5;
 }
