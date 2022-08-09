@@ -11,9 +11,7 @@ import {
 
 const SocialLinks = () => {
   return (
-    <div
-      className="vstack gap-3 justify-content-end position-fixed bottom-0 social_container"
-    >
+    <div className="vstack gap-3 justify-content-end position-fixed bottom-0 social_container">
       <ul className="nav flex-sm-column justify-content-center">
         <li className="nav-item">
           <a className="nav-link social" href={SOCIAL_LINKS.GIT}>
