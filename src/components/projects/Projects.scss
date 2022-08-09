@@ -1,0 +1,37 @@
+@import '../../variables';
+
+.carousel.project_carousel {
+    margin: 3rem auto;
+
+    .carousel-indicators {
+        bottom: -20px;
+    }
+
+    .carousel-inner {
+        width: 75%;
+        margin: auto;
+
+
+        .card-img {
+            width: 500px;
+            aspect-ratio: 1;
+        }
+
+        .card-img-overlay {
+            height: fit-content;
+            max-width: 500px;
+            margin: auto;
+            top: auto;
+            background: white;
+            color: $text-color-bold;
+
+            .h5 {
+                color: $primary
+            }
+        }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 12%;
+    }
+}

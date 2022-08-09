@@ -1,47 +1,28 @@
-import { Carousel } from "react-bootstrap";
+import { Card, Carousel, Image } from "react-bootstrap";
+import { projectsData } from "../../data/projects";
+import './Projects.scss';
 
 const Projects = () => {
-    return (
-      <Carousel variant="dark" fade>
-        <Carousel.Item>
-          {/* <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        /> */}
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          {/* <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
-            alt="Second slide"
-          /> */}
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          {/* <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
-            alt="Third slide"
-          /> */}
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    );
+  return (
+    <Carousel variant="dark" fade interval={2000} className='project_carousel'>
+      {projectsData.map((project) => {
+        return (
+          
+          <Carousel.Item>
+            <Card className="text-white border-0 align-items-center bg-transparent">
+            {/* <Card.Img rounded src={project.image} alt="project image" /> */}
+            <Image rounded src={project.image} alt="project image" className="card-img"/>
+            <Card.ImgOverlay>
+              <Card.Title className='fw-bold'>{project.title}</Card.Title>
+              <Card.Text className='fw-bold'>{project.description}</Card.Text>
+              <Card.Text className='fw-bold'>Last updated 3 mins ago </Card.Text>
+            </Card.ImgOverlay>
+          </Card>
+          </Carousel.Item>
+        );
+      })}
+    </Carousel>
+  );
 };
 
 export default Projects;
