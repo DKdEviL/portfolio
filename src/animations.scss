@@ -45,20 +45,3 @@
     }
   }
  
-  @keyframes scannerAnim {
-    0%, 10% {
-     width: 0;
-    }
-   
-    10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
-     border-right-color: transparent;
-    }
-   
-    11%,21%,31%,41%,51%,61%,71%,81%,91% {
-     border-right-color: $text-color-bold;
-    }
-   
-    60%, 80%, 100% {
-     width: 100%;
-    }
-   }
