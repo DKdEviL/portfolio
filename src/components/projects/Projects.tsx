@@ -1,3 +1,5 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Card, Carousel, Image } from "react-bootstrap";
 import { projectsData } from "../../data/projects";
 import './Projects.scss';
@@ -9,15 +11,27 @@ const Projects = () => {
         return (
           
           <Carousel.Item>
-            <Card className="text-white border-0 align-items-center bg-transparent">
-            {/* <Card.Img rounded src={project.image} alt="project image" /> */}
-            <Image rounded src={project.image} alt="project image" className="card-img"/>
-            <Card.ImgOverlay>
-              <Card.Title className='fw-bold'>{project.title}</Card.Title>
-              <Card.Text className='fw-bold'>{project.description}</Card.Text>
-              <Card.Text className='fw-bold'>Last updated 3 mins ago </Card.Text>
-            </Card.ImgOverlay>
-          </Card>
+            <div className="align-items-center project_card">
+            <div className="card_blob"></div>
+            <span className="card_img">{project.title.toUpperCase().charAt(0)}</span>
+            <Image className="card_img-image" src={project.image} alt='project_image'/>
+            <h2>
+            {project.title} <br /><span>{project.description}</span>
+            </h2>
+            <p>
+            <a href={project.link}>
+            <FontAwesomeIcon
+              className="link-social"
+              icon={faGithub}
+              size="3x"
+            />
+          </a>
+            </p>
+          </div>
+          {/* <div className="project_card">
+          <div className="card_blob"></div>
+          <span className="card_img"></span>
+          </div> */}
           </Carousel.Item>
         );
       })}

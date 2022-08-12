@@ -1,6 +1,6 @@
 export const projectsData = [
     {
-        title: 'Project 1',
+        title: 'Dashboard',
         link: 'https://www.linkedin.com/in/deepak-18',
         description: 'This is a projects',
         image: 'https://www.w3schools.com/w3css/img_lights.jpg'

@@ -10,28 +10,124 @@
     .carousel-inner {
         width: 75%;
         margin: auto;
-
-
-        .card-img {
-            width: 500px;
-            aspect-ratio: 1;
-        }
-
-        .card-img-overlay {
-            height: fit-content;
-            max-width: 500px;
-            margin: auto;
-            top: auto;
-            background: white;
-            color: $text-color-bold;
-
-            .h5 {
-                color: $primary
-            }
-        }
+        border-radius: 10px !important;
     }
+
     .carousel-control-prev,
     .carousel-control-next {
         width: 12%;
     }
+}
+
+
+.project_card {
+    width: 100%;
+    height: 450px !important;
+    background: #f0f0f0;
+    border-radius: 10px !important;
+    text-align: center;
+    transition: all 0.5s;
+
+    &:hover {
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+        background-color: $primary;
+        height: 100%;
+    }
+
+    .card_blob {
+        height: 10px;
+        width: 75%;
+        border-radius: 0 0 30px 30px;
+        margin: 0 auto;
+        background-color: $primary;
+        visibility: visible;
+        transition: all 0.3s;
+    }
+
+    &:hover .card_blob {
+        height: 0;
+    }
+
+    .card_img {
+        display: flex;
+        margin: 30px auto 10px auto;
+        width: 70px;
+        height: 70px;
+        background-color: $primary;
+        border-radius: 50%;
+        font-size: 48px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        transition: all 0.5s;
+    }
+
+    .card_img-image {
+        opacity: 0;
+        width: 70px;
+        height: 0;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        border-radius: 10px;
+        transition: all 1s;
+    }
+
+    &:hover .card_img-image {
+        opacity: 1;
+        width: 100%;
+        height: 70%;
+    }
+
+    &:hover .card_img {
+        // width: 100%;
+        // height: 70%;
+        // border-radius: 10px 0 0;
+        // margin: 0 auto;
+        // background-color: #f0f0f0;
+        // z-index: 99999;
+        display: none;
+    }
+
+    h2 {
+        padding: 15px 10px;
+        font-size: 25px;
+        transition: all 0.1s;
+        z-index: -99;
+        line-height: 17px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    &:hover h2 {
+        opacity: 0;
+        width: 100%;
+        position: absolute;
+        transition: all 0.5s;
+    }
+
+    p {
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.75s;
+
+        img {
+            padding: 8px;
+        }
+
+        a {
+            color: black;
+        }
+    }
+
+    &:hover p {
+        height: 30%;
+        opacity: 1;
+        transition: all 0.1s;
+    }
+
 }
