@@ -11,6 +11,7 @@ import {
   Tab,
 } from "react-bootstrap";
 import { empHistory } from "../../data/employment";
+import ContactButton from "../AnimatedButton/ContactButton";
 import "./WorkExperience.scss";
 
 const WorkExperience = () => {
@@ -61,7 +62,7 @@ const WorkExperience = () => {
                 Do you have something for me?
         </Alert>
                 <Stack gap={2} className="col-md-5 mx-auto justify-content-center align-items-center">
-                  <Button className="contact_btn" variant="secondary">Let's talk</Button>
+                  <ContactButton title="Let's Talk" />
                 </Stack>
               </Tab.Pane>
             </Tab.Content>
