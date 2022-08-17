@@ -6,7 +6,7 @@ import './About.scss';
 
 const AboutMe = () => {
   return (
-    <div className="container about d-flex flex-column flex-sm-row">
+    <div className="container about d-flex flex-column flex-sm-row section_container justify-content-center">
       <div className="my-5 text_container">
         <p className="fs-4">
           Hello! My name is Deepak and I enjoy developing things that live on

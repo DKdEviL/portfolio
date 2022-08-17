@@ -16,7 +16,7 @@ import "./WorkExperience.scss";
 
 const WorkExperience = () => {
   return (
-    <div className="container my-5">
+    <div className="container my-5 section_container">
       <Tab.Container
         id="left-tabs-example"
         defaultActiveKey={empHistory[0].employer_name + "-0"}

@@ -3,7 +3,7 @@ import ContactButton from "../AnimatedButton/ContactButton";
 
 const Contact = () => {
   return (
-    <div className="d-flex justify-content-center align-items-center text-center border-0 vh-100">
+    <div className="d-flex justify-content-center align-items-center text-center border-0 contact_container">
       {/* <Card.Header>Featured</Card.Header> */}
       <div className="d-flex flex-column justify-content-center align-items-center">
         <Card.Title>Get In Touch</Card.Title>

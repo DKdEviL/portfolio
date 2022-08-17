@@ -69,3 +69,19 @@ body {
 .container {
   font-family: 'Poppins', sans-serif;
 }
+.contact_container {
+  height: 80vh;
+}
+.section_container {
+  height: 80vh;
+}
+footer {
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px 12px 0 0;
+  letter-spacing: 1px;
+  background: rgb(216,11,119);
+  background: linear-gradient(90deg, rgba(216,11,119,1) 0%, rgba(168,75,182,0.9332107843137255) 69%, rgba(154,18,114,0.896796218487395) 100%);
+}
+

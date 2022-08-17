@@ -58,22 +58,25 @@ function App() {
           <SocialLinks />
         </aside>
         <section className="main_container">
-          <div className="neo_container">
+          <div>
             <Info />
           </div>
-          <div id="aboutMe" className="neo_container">
+          <div id="aboutMe">
             <AboutMe />
           </div>
-          <div className="neo_container" id="experience">
+          <div id="experience">
             <WorkExperience />
           </div>
-          <div className="neo_container" id="myProjects">
+          <div id="myProjects">
             <Projects />
           </div>
-          <div className="neo_container" id="contactMe">
+          <div id="contactMe">
             <Contact />
           </div>
         </section>
+        <footer className="d-flex justify-content-center align-items-center">
+          Handcrafter by me &#169; <a href="https://www.linkedin.com/in/deepak-18" className="link-light">Deepak</a>
+        </footer>
       </div>
     </>
   );

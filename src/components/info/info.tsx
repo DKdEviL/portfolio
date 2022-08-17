@@ -3,7 +3,7 @@ import "./info.scss";
 
 const Info = () => {
   return (
-    <div className="container">
+    <div className="container section_container d-flex flex-column justify-content-center">
       <h1 className="name focusName">Deepak</h1>
       <h1 className="display-5 my-3 title">
         - <u>Frontend Developer</u>
