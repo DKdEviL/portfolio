@@ -39,7 +39,7 @@
 
        &:hover::before {
         width: 100%;
-        background-color: $primary;
+        background-color: $primary !important;
        }
 
 }

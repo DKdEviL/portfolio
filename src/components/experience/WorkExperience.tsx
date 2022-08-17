@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    Alert,
+  Alert,
   Button,
   Col,
   Fade,
@@ -57,11 +57,18 @@ const WorkExperience = () => {
                   </ListGroup>
                 </Tab.Pane>
               ))}
-              <Tab.Pane eventKey={"haveOffer"} className='offer'>
-              <Alert key={'info-alert'} variant={'info'} className='fw-bold text-center'>
-                Do you have something for me?
-        </Alert>
-                <Stack gap={2} className="col-md-5 mx-auto justify-content-center align-items-center">
+              <Tab.Pane eventKey={"haveOffer"} className="offer">
+                <Alert
+                  key={"info-alert"}
+                  variant={"info"}
+                  className="fw-bold text-center"
+                >
+                  Do you have something for me?
+                </Alert>
+                <Stack
+                  gap={2}
+                  className="col-md-5 mx-auto justify-content-center align-items-center"
+                >
                   <ContactButton title="Let's Talk" />
                 </Stack>
               </Tab.Pane>
