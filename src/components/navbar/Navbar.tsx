@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">Deepak Logo</Navbar.Brand>
+        <Navbar.Brand href="#">Deepak Logo</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto fs-4 fw-semibold links">

@@ -10,7 +10,7 @@ const Projects = () => {
       {projectsData.map((project) => {
         return (
           
-          <Carousel.Item>
+          <Carousel.Item key={project.title}>
             <div className="align-items-center project_card">
             <div className="card_blob"></div>
             <span className="card_img">{project.title.toUpperCase().charAt(0)}</span>

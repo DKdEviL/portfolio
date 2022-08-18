@@ -35,7 +35,7 @@ const AboutMe = () => {
           </ListGroup>
         </div>
       </div>
-      <div>
+      <div className="d-xl-flex d-none">
         <img src={aboutMeImage} width={400} height={450} />
       </div>
     </div>

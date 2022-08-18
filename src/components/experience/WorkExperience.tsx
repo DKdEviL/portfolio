@@ -25,7 +25,7 @@ const WorkExperience = () => {
           <Col sm={3}>
             <Nav variant="pills" className="flex-column">
               {empHistory.map((employer, index) => (
-                <Nav.Item>
+                <Nav.Item key={index}>
                   <Nav.Link
                     className="company_tab"
                     eventKey={employer.employer_name + "-" + index}
@@ -44,7 +44,7 @@ const WorkExperience = () => {
           <Col sm={9}>
             <Tab.Content>
               {empHistory.map((employer, index) => (
-                <Tab.Pane eventKey={employer.employer_name + "-" + index}>
+                <Tab.Pane key={index} eventKey={employer.employer_name + "-" + index}>
                   <ListGroup variant="flush">
                     {employer.details.map((details, index) => (
                       <ListGroup.Item
