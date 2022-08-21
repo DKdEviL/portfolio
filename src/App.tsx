@@ -26,14 +26,13 @@ function App() {
 
   return (
     <>
-      <div className="body_container">
+      {/* <div className="body_container">
         <div className="wave_container"></div>
         <div className="wave">
           <svg
             style={{
               width: "100%",
-              minWidth: "960px",
-              height: "116px",
+              minWidth: "960px",j.
               marginLeft: "50%",
               color: "#f1f5f7",
               transform: "translateX(-50%)",
@@ -77,7 +76,7 @@ function App() {
         <footer className="d-flex justify-content-center align-items-center">
           Handcrafter by me &#169; <a href="https://www.linkedin.com/in/deepak-18" className="link-light">Deepak</a>
         </footer>
-      </div>
+      </div> */}
     </>
   );
 }
